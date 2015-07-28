@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var jwt = require('jsonwebtoken');
+//var jwt = require('jsonwebtoken');
 var secretKey = 'sexme';
 //var RecipeAPI = require('./api/RecipeAPI');
 //var UserAPI = require('./api/UserAPI');

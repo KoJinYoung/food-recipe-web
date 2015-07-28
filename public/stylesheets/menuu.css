@@ -1,189 +1,157 @@
-body{
-    top: 0;
-    position: relative;
-    max-width: 100%;
-    margin:0;
-    padding: 0;
+body {
+  top: 0;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "나눔고딕",sans-serif;
 }
 
-#nav{
-  background-color: black;
-}
-#nav.fixed {
-  padding-left: 0px;
-  opacity: 0.95;
-  -webkit-box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
-  box-shadow: 0 1px 5px 1px rgba(0,0,0,0.2);
-}
-#nav ul{
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
+#nav {
+  background-color: #fef8c5;
+  height:40px;
 }
 
-#nav ul li{
-    float:left;
+#nav .innav {
+  width: 900px;
+  height: 40px;
+  margin: auto;
 }
 
-#nav ul li.login{
-    margin-top: 10px;
-    margin-left: 5px;
+#nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
 }
 
-#nav ul li.my{
-    margin-left: 5%;
-    margin-top: 10px;
+#nav ul li {
+  float: left;
 }
 
-#nav ul li.input{
-    margin-left: 2px;
-    margin-top: 6px;
+#nav ul li.category {
+  padding: 10px 10px 11px 0;
+  text-align: center;
+  background-color: white;
+  border-top: 2px solid #ED1458;
 }
 
-#nav ul li.category{
-    margin-left:17.7%;
-    width: 150px;
-    padding: 10px 0 7px 0;
-    text-align: center;
+#nav ul li.category .categoryimg{
+  width:15px;
+  height:10px;
+  margin-top:5px;
+  padding: 0 0 0 20px;
 }
 
-#nav ul li.search{
+#nav ul li.category span{
+  font-size:15px;
+  color: #ED1458;
+  margin-right: 15px;
+  margin-left: 5px;
+  font-weight: normal;
+}
 
+#nav ul li.category:hover{
+  cursor:pointer;
+  background-color: white;
+}
+
+#nav ul li.search {
   margin-top: 10px;
-  margin-left: 17%;
 }
 
-#nav a:link, #nav a:visited, #nav b, #nav ul li.login{
-    display: inline-block;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: arial, helvetica, sans-serif;
+#nav input {
+  border-style: hidden;
+  width: 230px;
+  height: 28px;
+  padding: 5px 0 5px 10px;
+  margin:0;
+  background-color:#fef8c5;
 }
 
-#nav b{
-    color:white;
-    font-size:15px;
+#nav ul li.button {
+  height: 38px;
+  width: 40px;
+  background-color: #fef8c5;
+  margin-left: 0;
 }
 
-#nav input{
-    border: 2px darkgray;
-    border-style: solid hidden solid solid;
-    border-radius: 5px 0 0 5px;
-    width:180px;
-    height: 26px;
-    padding: 0;
-    margin-left: 0;
+#nav ul li.button:hover {
+  background-color: #ED1458;
 }
 
-#nav ul li.button{
-    height: 26px;
-    width: 26px;
-    border: 2px darkgray;
-    border-style: solid solid solid hidden;
-    background-color: white;
-    border-radius: 0 5px 5px 0;
-    margin-left: 0;
-    margin-top: 6px;
-}
-
-
-#nav ul li.button img{
-    height: 26px;
-    width: 26px;
-}
-
-
-#nav ul li.button:hover{
-    background-color: darkgray;
-}
-
-#nav a:hover{
-    color: deeppink;
-}
-
-@media screen and (max-width: 1220px){
-  #nav b, #nav input, #nav ul li.button{
-    display: none;
-  }
-
-  #nav ul li.my, #nav ul li.input{
-    margin:0;
-  }
-
-  #nav ul li.login{
-    margin-left: 17%;
-  }
-}
-
-@media screen and (max-width: 690px){
-  #nav ul li.search{
-    display: none;
-  }
-  #nav ul li.button{
-    display:inline;
-    margin-left: 15%;
-    border-style: solid;
-    background-color: white;
-    border-radius: 5px;
-  }
-}
-
-@media screen and (max-width: 550px){
-  #nav ul li.login{
-    display: none;
-  }
-
-  #nav ul li.category{
-    margin-left: 20%;
-  }
-}
-
-@media screen and (max-width: 320px){
-  #nav ul li.category{
-    margin-left: 8%;
-  }
-
-  #nav ul li.button{
-    margin-left: 8%;
-  }
-}
-
-#nav ul ul{
+#nav ul ul {
   display: none;
   position: absolute;
-  margin-top: 7px;
-  padding:0;
+  padding: 0;
   height: auto;
-  background-color: deeppink;
+  background-color: white;
+  margin-top:10px;
+  border-left: 2px solid #ED1458;
+  border-right: 2px solid #ED1458;
+  border-bottom: 2px solid #ED1458;
 }
 
-#nav ul ul li{
-  float: none;
-  padding-top: 10px;
-  margin: 0;
-  width: 150px;
-  border-bottom: solid black 2px;
+#nav ul.icon_instruction{
+  font-size: 12px;
 }
 
-#nav ul ul li:last-child{
+#nav ul.icon_instruction li{
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+#nav ul li.icon:hover ul{
+  display:block;
+}
+
+#nav ul ul li:last-child {
   border: none;
 }
 
-#nav ul ul li a{
-  width: 150px;
-  height: 33px;
-}
-
-#nav ul li.category:hover ul{
+#nav ul li.category:hover ul {
   display: block;
 }
 
-#nav ul ul li a:hover{
+#nav ul li.login, #nav ul li.recipe, #nav ul li.cart{
+  font-size: 15px;
+  height:16px;
+  padding: 2px;
+  margin: 10px;
+  border-right: 2px solid #ED1458;
+}
+
+#nav ul li.login{
+  padding-left:200px;
+}
+#nav ul li.num{
+  font-size:15px;
+  border-top:2px solid #ED1458;
+  color: black;
+  padding: 10px;
+}
+
+#nav ul ul table th{
+  padding: 20px 52px 20px 52px;
+  font-size:17px;
   color: black;
 }
+
+#nav a:link {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "나눔고딕",sans-serif;
+}
+
+#nav ul ul table td{
+  padding: 0 0 15px 0;
+  color:black;
+  font-size: 15px;
+}
+
+
+
 
 
 

@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var login = require('./routes/login');
-var test = require('./routes/test');
+//var test = require('./routes/test');
 
 ////// ejs view 파일들을 사용을 한다.
 var ejs = require('ejs');
@@ -37,7 +37,7 @@ app.use("/public/images",express.static(__dirname + "/public/images"));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/login', login);
-app.use('/test', test);
+//app.use('/test', test);
 
 /*  login이라는 모듈이 없기때문에 사용이 불가능하다.
 app.get('/login',function(request, response){
