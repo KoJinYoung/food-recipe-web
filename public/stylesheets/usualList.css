@@ -1,0 +1,160 @@
+body{
+    margin:0px;
+    overflow: auto;
+}
+p{
+    font-family: sans-serif;
+    font-size:18px;
+}
+
+#main{
+
+}
+
+
+.ListHolder{
+    position:absolute;
+    margin-top:50px;
+    margin-left:0px;
+    width:1310px;
+}
+#main{
+    width:1300px;
+    height:900px;
+    margin:auto;
+}
+#main ul{
+    padding-left:0px;
+}
+
+.ListHolder li{
+    margin:0px;
+    padding:0px;
+    position:relative;
+    list-style:none;
+    display:inline;
+    text-decoration:none;
+}
+
+.list{
+    position:relative;
+    float: left;
+    width:300px;
+    height:300px;
+    margin:0px;
+    padding:0px;
+    background-color:#000000;
+    z-index: 0;
+}
+.list img{
+    position: absolute;
+    width:300px;
+    height:300px;
+    z-index: 1;
+}
+.list p{
+    position:absolute;
+    font-weight: bold;
+}
+
+.bf-exp1{
+    color:#ffffff;
+    font-weight: bold;
+    z-index: 0;
+    margin-top:50px;
+    margin-left:20px;
+    float:left;
+    width:250px;
+    height:25px;
+}
+.bf-exp2{
+    color:#ffffff;
+    font-weight: bold;
+    z-index: 0;
+    margin-top:5px;
+    margin-left:20px;
+    float:left;
+    clear:left;
+    width:200px;
+    height:150px;
+}
+.time{
+    color:#ffffff;
+    font-weight: bold;
+    z-index: 0;
+    margin-top:5px;
+    margin-left:100px;
+    float:left;
+    clear:left;
+    width:80px;
+    height: 20px;
+}
+.time span{
+    padding-left:25px;
+}
+.time img{
+    float:left;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    width:25px;
+    height:25px;
+}
+.writer{
+    color:#ffffff;
+    font-weight: bold;
+    z-index: 0;
+    margin-top:5px;
+    margin-left:5px;
+    float:left;
+    width:100px;
+    height:20px;
+}
+
+.r-title{
+    float:left;
+    margin-bottom:20px;
+    margin-top:10px;
+    padding-left:5px;
+    border-top:1px dashed #cccccc;
+    width:300px;
+    height:20px;
+    font-weight:bold;
+    font-family: sans-serif;
+    font-size:18px;
+    z-index: 0;
+}
+.r-title-name{
+    position:relative;
+    float: left;
+    color:black;
+}
+.r-list{
+    position:relative;
+    float: left;
+    width:300px;
+    height:350px;
+    margin:5px;
+    padding:3px;
+    border:1px solid #cccccc;
+}
+.like-rating{
+    color: deeppink;
+    float:right;
+    width:50px;
+    height:20px;
+    font-weight:bold;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.list img:hover{
+    opacity:0.3;
+}
+
+a{
+    text-decoration:none;
+}
